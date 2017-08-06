@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import rbac.sunprakon.kittisak.myrbac.R;
 
@@ -25,7 +26,32 @@ public class SignUpFragment extends Fragment{
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
+        //Back Controller
+        backController();
 
+        //save controller
+        saveController();
+
+    }
+
+    private void saveController() {
+        ImageView imageView = (ImageView) getView().findViewById(R.id.imvSave);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+    }
+
+    private void backController() {
+        ImageView imageView = (ImageView) getView().findViewById(R.id.imvBack);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
 
     }
 }  //Main Class
