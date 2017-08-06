@@ -15,6 +15,7 @@
 
             <!--Back-->
             <ImageView
+                android:id="@+id/imvBack"
                 android:src="@mipmap/ic_back"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
@@ -30,6 +31,8 @@
                 android:layout_height="wrap_content" />
 
             <ImageView
+                android:id="@+id/imvSave"
+                android:src="@mipmap/ic_save"
                 android:layout_alignParentRight="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
@@ -96,7 +99,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@mipmap/ic_user" />
+                android:src="@mipmap/ic_password" />
 
             <EditText
                 android:id="@+id/edtPassword"
