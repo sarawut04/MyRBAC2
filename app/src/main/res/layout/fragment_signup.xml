@@ -61,7 +61,7 @@
                 android:src="@mipmap/ic_name" />
 
             <EditText
-                android:textColorHint="@color/colorPrimaryLight"
+                android:textColorHint="@color/textcolorPrimary"
                 android:textColor="@color/colorPrimaryDark"
                 android:id="@+id/edtName"
                 android:hint="Name :"
@@ -83,7 +83,7 @@
                 android:src="@mipmap/ic_user" />
 
             <EditText
-                android:textColorHint="@color/colorPrimaryLight"
+                android:textColorHint="@color/textcolorPrimary"
                 android:textColor="@color/colorPrimaryDark"
                 android:id="@+id/edtUser"
                 android:inputType="text"
@@ -106,7 +106,7 @@
                 android:src="@mipmap/ic_password" />
 
             <EditText
-                android:textColorHint="@color/colorPrimaryLight"
+                android:textColorHint="@color/textcolorPrimary"
                 android:textColor="@color/colorPrimaryDark"
                 android:id="@+id/edtPassword"
                 android:inputType="text"

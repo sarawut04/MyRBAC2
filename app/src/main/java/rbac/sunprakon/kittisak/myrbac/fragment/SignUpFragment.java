@@ -3,9 +3,11 @@ package rbac.sunprakon.kittisak.myrbac.fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.ImageView;
 
 import rbac.sunprakon.kittisak.myrbac.R;
@@ -13,14 +15,16 @@ import rbac.sunprakon.kittisak.myrbac.R;
 /**
  * Created by Administrator on 6/8/2560.
  */
-public class SignUpFragment extends Fragment{
+public class SignUpFragment extends Fragment {
+
+    private String nameString, userString, passwordString;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_signup,container,false);
-                return view;
-    }
+        View view = inflater.inflate(R.layout.fragment_signup, container, false);
+        return view;
+    } //onCreateView
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
@@ -40,7 +44,28 @@ public class SignUpFragment extends Fragment{
             @Override
             public void onClick(View v) {
 
-            }
+                //Get Value From EditText
+                EditText nameEditText = (EditText) getView().findViewById(R.id.edtName);
+                EditText userEditText = (EditText) getView().findViewById(R.id.edtUser);
+                EditText passwordEditText = (EditText) getView().findViewById(R.id.edtPassword);
+
+                nameString = nameEditText.getText().toString().trim();
+                userString = userEditText.getText().toString().trim();
+                passwordString = passwordEditText.getText().toString().trim();
+
+                //Check Space
+                if (nameString.equals("") || userString.equals("") || passwordString.equals("")) {
+                    //Have Space
+                    Log.d("6AugV1", "Have Space");
+
+                } else {
+                    //No Space
+                    Log.d("6AugV1", "No Space");
+
+                }
+
+
+            } //OnClick
         });
     }
 
